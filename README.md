@@ -6,6 +6,8 @@
 - Desenvolver Menu topo
 - Desenvolver menu inferior
 
+## Features para serem desenvolvidas dia 29/03/2024
+
 ## Tecnologias a serem adotadas 
 - React
 - Styled Components
