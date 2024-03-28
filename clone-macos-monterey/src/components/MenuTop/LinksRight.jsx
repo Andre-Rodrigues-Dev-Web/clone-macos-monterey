@@ -1,3 +1,4 @@
+import DataHoraComponent from "./Date";
 import { ContainerRigth } from "./style";
 import { IoIosWifi, IoIosBatteryFull } from "react-icons/io";
 
@@ -11,7 +12,7 @@ const LinksRight = () => {
         <li>
           <IoIosBatteryFull size={20} />
         </li>
-        <li>Mon Jun 22 9:41 AM</li>
+        <DataHoraComponent />
       </ul>
     </ContainerRigth>
   );
