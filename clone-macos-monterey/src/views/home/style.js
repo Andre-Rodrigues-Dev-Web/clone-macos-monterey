@@ -57,7 +57,9 @@ const ContainerIllustrator = styled.div`
   border-radius: 10px;
   height: 86vh;
   margin: 0 auto;
+  transform: translateY(-690px);
   width: 80%;
+  z-index: 1000;
 `;
 
 const HeaderWindow = styled.div`
@@ -131,6 +133,65 @@ const ContentEditor = styled.div`
   }
 `;
 
+const ContainerDesktop = styled.div`
+  min-height: 86vh;
+  width: 100%;
+`;
+
+const OptionsClickRight = styled.div`
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 200px;
+  button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    padding: 8px 10px;
+  }
+`;
+
+const AreaIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+  .container-link{
+    button{
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 60px;
+      }
+      span{
+        display: block;
+        line-height: 10px;
+      }
+    }
+  }
+`;
+
+const OptionsFolder = styled.div`
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translate(80px, -70px);
+  width: 200px;
+  button{
+    background-color: transparent;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    padding: 5px 10px;
+  }
+`;
+
 export {
   ContainerContent,
   Content,
@@ -139,4 +200,8 @@ export {
   HeaderWindow,
   HeaderLogo,
   ContentEditor,
+  ContainerDesktop,
+  OptionsClickRight,
+  AreaIcons,
+  OptionsFolder,
 };
