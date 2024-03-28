@@ -17,18 +17,18 @@ const Desktop = () => {
   const [newFolderName, setNewFolderName] = useState("");
 
   const containerRef = useRef(null);
+  const optionsRef = useRef(null);
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (containerRef.current && !containerRef.current.contains(e.target)) {
-        setSelectedFolderIndex(null);
-        setEditingFolderIndex(null);
+    const handleClick = (e) => {
+      if (optionsRef.current && !optionsRef.current.contains(e.target)) {
+        setShowOptions(false);
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClick);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClick);
     };
   }, []);
 
@@ -113,6 +113,7 @@ const Desktop = () => {
       </AreaIcons>
       {showOptions && (
         <OptionsClickRight
+          ref={optionsRef}
           style={{ position: "absolute", top: position.y, left: position.x }}
         >
           <button onClick={handleNewFolderClick}>Nova pasta</button>
