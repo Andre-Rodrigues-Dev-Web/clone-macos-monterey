@@ -158,6 +158,7 @@ const OptionsClickRight = styled.div`
 const AreaIcons = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100px;
   .container-link{
     button{
       background-color: transparent;
@@ -165,6 +166,7 @@ const AreaIcons = styled.div`
       color: #fff;
       display: flex;
       flex-direction: column;
+      margin-top: 10px;
       img{
         width: 60px;
       }
