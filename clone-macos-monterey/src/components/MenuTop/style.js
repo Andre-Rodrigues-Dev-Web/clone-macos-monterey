@@ -26,7 +26,7 @@ const ContainerLeft = styled.div`
 `
 
 const ContainerRigth = styled.div`
-    width: 218px;
+    width: 260px;
     ul{
         display: flex;
         flex-direction: row;

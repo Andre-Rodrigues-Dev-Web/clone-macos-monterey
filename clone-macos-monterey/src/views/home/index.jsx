@@ -8,9 +8,10 @@ import DockIcon from "../../assets/imgs/icons/dock.png";
 import Illustrator from "../../assets/imgs/icons/adobe_illustrator.png";
 import photoShop from "../../assets/imgs/icons/adobe_photoshop.png";
 import lixeira from "../../assets/imgs/icons/lixeira.png";
-import vsc from '../../assets/imgs/icons/vsc.png'
+import vsc from "../../assets/imgs/icons/vsc.png";
 
 import IllustratorEditor from "./Illustrator";
+import Desktop from "./Desktop";
 
 const Home = () => {
   const [dockVisible, setDockVisible] = useState(false);
@@ -38,8 +39,9 @@ const Home = () => {
   return (
     <ContainerContent>
       <Content>
+        <Desktop></Desktop>
         {dockVisible && <div className="animated-div">Conteúdo do Dock</div>}
-        {illustratorVisible && (<IllustratorEditor />)}
+        {illustratorVisible && <IllustratorEditor />}
         {photoshopVisible && (
           <div className="animated-div">Conteúdo do Photoshop</div>
         )}
