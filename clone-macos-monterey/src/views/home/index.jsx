@@ -4,11 +4,11 @@ import {
   Content,
   MenuBottomContainer,
 } from "./style";
-import DockIcon from "../../assets/imgs/icons/dock.png";
-import Illustrator from "../../assets/imgs/icons/adobe_illustrator.png";
-import photoShop from "../../assets/imgs/icons/adobe_photoshop.png";
-import lixeira from "../../assets/imgs/icons/lixeira.png";
-import vsc from "../../assets/imgs/icons/vsc.png";
+import DockIcon from "../../assets/imgs/icons/macos/dock.png";
+import Illustrator from "../../assets/imgs/icons/macos/adobe_illustrator.png";
+import photoShop from "../../assets/imgs/icons/macos/adobe_photoshop.png";
+import lixeira from "../../assets/imgs/icons/macos/lixeira.png";
+import vsc from "../../assets/imgs/icons/macos/vsc.png";
 
 import IllustratorEditor from "./Illustrator";
 import Desktop from "./Desktop";

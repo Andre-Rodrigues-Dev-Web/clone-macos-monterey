@@ -57,7 +57,7 @@ const ContainerIllustrator = styled.div`
   border-radius: 10px;
   height: 86vh;
   margin: 0 auto;
-  transform: translateY(-690px);
+  transform: translateY(-46.5em);
   width: 80%;
   z-index: 1000;
 `;

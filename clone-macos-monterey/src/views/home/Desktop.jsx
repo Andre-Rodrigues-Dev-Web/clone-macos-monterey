@@ -5,7 +5,7 @@ import {
   AreaIcons,
   OptionsFolder,
 } from "./style";
-import folder from "../../assets/imgs/icons/pasta.png";
+import folder from "../../assets/imgs/icons/macos/pasta.png";
 
 const Desktop = () => {
   const [showOptions, setShowOptions] = useState(false);

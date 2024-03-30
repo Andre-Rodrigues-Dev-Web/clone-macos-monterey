@@ -5,7 +5,7 @@ import {
   HeaderLogo,
   HeaderWindow,
 } from "./style";
-import logoIllustrator from "../../assets/imgs/icons/adobe_illustrator.png";
+import logoIllustrator from "../../assets/imgs/icons/macos/adobe_illustrator.png";
 
 const IllustratorEditor = () => {
   const [isVisible, setIsVisible] = useState(true);
